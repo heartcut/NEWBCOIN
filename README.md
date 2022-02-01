@@ -1,6 +1,6 @@
 # NEWBCOIN
 
-![Alt text](newbcoin.png?raw=true "Title")
+<img src="newbcoin.png" width="357" height="316">
 
 the cryptocurrency you never needed
 
@@ -12,4 +12,4 @@ centralized server i dont have running yet and a wallet/miner app that doesnt do
 
 with a sleek modern ui
 
-![Alt text](uiscreenshot.png?raw=true "Title")
+<img src="uiscreenshot.png">
