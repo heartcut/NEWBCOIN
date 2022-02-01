@@ -10,6 +10,6 @@ centralized server i dont have running yet and a wallet/miner app that doesnt do
 
 ## Miner/Wallet in one
 
-with a sleek modern ui
+with a sleek modern ui.
 
 <img src="uiscreenshot.png">
