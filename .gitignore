@@ -10,4 +10,4 @@
 apitest.py
 thecloud.json
 .history
-testignore.txt
+/testignore.txt
