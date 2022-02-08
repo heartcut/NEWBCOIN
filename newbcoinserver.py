@@ -132,23 +132,3 @@ def add_new_block(pubkey):
     json.dump(theclouddata, thecloudfile, indent=4)
 
 ##############################################
-# below is unused code for now
-
-
-class Block(object):
-    def __init__(self, LastHash, POWhash, Reciever, Sender, Time, BlockNumber, Type, Amount, timestamp=None):
-        self.LastHash = LastHash
-        self.POWhash = POWhash
-        self.Reciever = Reciever
-        self.Sender = Sender
-        self.Time = Time
-        self.BlockNumber = BlockNumber
-        self.Type = Type
-        self.Amount = Amount
-        #self.timestamp = timestamp or time.time()
-    # @property
-    # def compute_hash(self):
-    #     string_block = "{}{}{}{}{}".format(self.index, self.proof_number, self.previous_hash, self.data, self.timestamp)
-    #     return hashlib.sha256(string_block.encode()).hexdigest()
-    # def __repr__(self):
-    #     return "{} - {} - {} - {} - {}".format(self.index, self.proof_number, self.previous_hash, self.data, self.timestamp)
