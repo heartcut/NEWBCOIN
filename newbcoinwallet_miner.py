@@ -16,6 +16,7 @@ statusurl = "http://127.0.0.1:5000/api/statuscheck/"
 balanceurl = "http://127.0.0.1:5000/api/balancecheck?pubkey="
 solveurl = "http://127.0.0.1:5000/api/solveblock?pubkey="  # also need &answer=
 lastblockurl = "http://127.0.0.1:5000/api/getlastblock/"
+transurl = "http://127.0.0.1:5000/api/dotransaction?"
 
 
 window = Tk()
@@ -55,8 +56,46 @@ except:
     statusvar = False
 
 
+amountbox = StringVar()
+recipientkeybox = StringVar()
+
+
 def sendcoins():
-    x = 1
+
+    transhash = "Reciever:"+str(recipientkeybox.get()) + \
+        ",Amount:"+str(amountbox.get())
+    print(transhash)
+    transhash = privkstr.sign(str.encode(transhash))
+    print(str(recipientkeybox.get()))
+    print(str(amountbox.get()))
+    send = requests.request("GET", transurl+"mykey=" +
+                            str(publickeystringvar.get())+"&reckey=" +
+                            str(recipientkeybox.get())+"&amount=" +
+                            str(amountbox.get())+"&transactionhash=" +
+                            str(transhash.hex()))
+    time.sleep(1)
+    if str(json.loads(send.text)) == "True":
+        sendcoinpopup = Toplevel()
+        sendcoinpopup.geometry('500x500')
+
+        closebutt = Button(sendcoinpopup, text="close this window",
+                           command=sendcoinpopup.destroy
+                           )
+        closebutt.grid(row=1, column=2)
+        l2 = Label(sendcoinpopup,
+                   text="trans worked")
+        l2.grid(row=0, column=1)
+    else:
+        sendcoinpopup = Toplevel()
+        sendcoinpopup.geometry('500x500')
+
+        closebutt = Button(sendcoinpopup, text="close this window",
+                           command=sendcoinpopup.destroy
+                           )
+        closebutt.grid(row=1, column=2)
+        l2 = Label(sendcoinpopup,
+                   text="transaction failed")
+        l2.grid(row=0, column=1)
 
 
 def getmybalance():
@@ -158,12 +197,8 @@ def makenewkey():
     publickeystringvar.set(pubkstr.to_string().hex())
     l2text.set("new keys generated")
 
+
 ##
-
-
-amountbox = StringVar()
-recipientkeybox = StringVar()
-
 amount = Label(window, text="Please enter the ammount to send below")
 amount.grid(row=1, column=1)
 
@@ -173,7 +208,7 @@ amountentry.grid(row=2, column=1)
 recipientkey = Label(window, text="Please enter the recipients public key")
 recipientkey.grid(row=3, column=1)
 
-recipientkeyentry = Entry(window, textvariable=amountbox)
+recipientkeyentry = Entry(window, textvariable=recipientkeybox)
 recipientkeyentry.grid(row=4, column=1)
 
 sendcoinsbutton = Button(window, text="send coins",

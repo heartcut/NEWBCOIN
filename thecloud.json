@@ -1,84 +1,58 @@
 {
     "Blocks": [
         {
-            "LastHash": "lasthash",
-            "POWhash": "hashedword",
-            "Reciever": "Transaction",
-            "Sender": "Transaction",
+            "LastHash": "newb",
+            "POWhash": "99754106633f94d350db34d548d6091a",
+            "Reciever": "R",
+            "Sender": "S",
             "Time": "timehere",
             "BlockNumber": "1",
-            "Type": "Transaction",
-            "Amount": "1"
+            "Type": "Start",
+            "Amount": "0"
         },
         {
-            "LastHash": "lasthash",
-            "POWhash": "hashedword",
-            "Reciever": "Transaction",
-            "Sender": "Transaction",
-            "Time": "timehere",
+            "LastHash": "c1b3c7fb703fb305ff76ad4eccb2ef22",
+            "POWhash": "8c6a27d3bdcff0916ea71e254f4491fd",
+            "Reciever": "93ad8e103e0a7f4d6a64045ab28320bd9ec1c66d880197947e994d028de62bf6c1a975facfdb0a0c8e6c9f03277ac85ed939de84024812d0f63ee831f55f457f",
+            "Sender": "0",
+            "Time": 1644280938.8246691,
             "BlockNumber": "2",
-            "Type": "Transaction",
-            "Amount": "4"
+            "Type": "BlockSolved",
+            "Amount": "1",
+            "HashOfTransaction": "0"
         },
         {
-            "LastHash": "lasthash",
-            "POWhash": "hashedword",
-            "Reciever": "a09dfdae7c416cced8593a41c8b69abc70509fde0edd124819dcf722d00c368df59bf017e71d43efa0fbf3ebcf7b50d612a623070c5a457ad7b3f5b668667c8c",
-            "Sender": "Transaction",
-            "Time": "timehere",
+            "LastHash": "245193c800bc5dc32352757630bd7d9a",
+            "POWhash": "9fc4f29df2152b6d1a98ddb89c35f953",
+            "Reciever": "93ad8e103e0a7f4d6a64045ab28320bd9ec1c66d880197947e994d028de62bf6c1a975facfdb0a0c8e6c9f03277ac85ed939de84024812d0f63ee831f55f457f",
+            "Sender": "0",
+            "Time": 1644280945.049341,
             "BlockNumber": "3",
-            "Type": "Transaction",
-            "Amount": "9"
+            "Type": "BlockSolved",
+            "Amount": "1",
+            "HashOfTransaction": "0"
         },
         {
-            "LastHash": "lasthash",
-            "POWhash": "hashedword",
-            "Reciever": "a09dfdae7c416cced8593a41c8b69abc70509fde0edd124819dcf722d00c368df59bf017e71d43efa0fbf3ebcf7b50d612a623070c5a457ad7b3f5b668667c8c",
-            "Sender": "Transaction",
-            "Time": "timehere",
+            "LastHash": "b0b2a5cbc7c5e1129de6656b71e9f121",
+            "POWhash": "9d678d1de6737cf18535dfc213c1749f",
+            "Reciever": "93ad8e103e0a7f4d6a64045ab28320bd9ec1c66d880197947e994d028de62bf6c1a975facfdb0a0c8e6c9f03277ac85ed939de84024812d0f63ee831f55f457f",
+            "Sender": "0",
+            "Time": 1644280950.9927511,
             "BlockNumber": "4",
-            "Type": "Transaction",
-            "Amount": "1"
+            "Type": "BlockSolved",
+            "Amount": "1",
+            "HashOfTransaction": "0"
         },
         {
-            "LastHash": "lasthash",
-            "POWhash": "hashedword",
+            "LastHash": "77e927ef837210aa9f70f4d21236a4af",
+            "POWhash": "cbeeb7319439d41c4baebac3911f7ef1",
             "Reciever": "93ad8e103e0a7f4d6a64045ab28320bd9ec1c66d880197947e994d028de62bf6c1a975facfdb0a0c8e6c9f03277ac85ed939de84024812d0f63ee831f55f457f",
-            "Sender": "Transaction",
-            "Time": "timehere",
+            "Sender": "0",
+            "Time": 1644280954.9103303,
             "BlockNumber": "5",
-            "Type": "Transaction",
-            "Amount": "4"
-        },
-        {
-            "LastHash": "35d0117abaf6c0c3bf4d2153407c7bdc",
-            "POWhash": "99754106633f94d350db34d548d6091a",
-            "Reciever": "93ad8e103e0a7f4d6a64045ab28320bd9ec1c66d880197947e994d028de62bf6c1a975facfdb0a0c8e6c9f03277ac85ed939de84024812d0f63ee831f55f457f",
-            "Sender": "Transaction",
-            "Time": "timehere",
-            "BlockNumber": "6",
             "Type": "BlockSolved",
-            "Amount": "1"
-        },
-        {
-            "LastHash": "6bbe59d453d1278587d11974785c0c21",
-            "POWhash": "6a348fca17a57a30e55a50c6c142f3da",
-            "Reciever": "93ad8e103e0a7f4d6a64045ab28320bd9ec1c66d880197947e994d028de62bf6c1a975facfdb0a0c8e6c9f03277ac85ed939de84024812d0f63ee831f55f457f",
-            "Sender": "Transaction",
-            "Time": "timehere",
-            "BlockNumber": "7",
-            "Type": "BlockSolved",
-            "Amount": "1"
-        },
-        {
-            "LastHash": "a8b3cb85a36e22143b0947380a87bcc7",
-            "POWhash": "0c33fefaf29e779f9dc5250543201254",
-            "Reciever": "93ad8e103e0a7f4d6a64045ab28320bd9ec1c66d880197947e994d028de62bf6c1a975facfdb0a0c8e6c9f03277ac85ed939de84024812d0f63ee831f55f457f",
-            "Sender": "Transaction",
-            "Time": "timehere",
-            "BlockNumber": "8",
-            "Type": "BlockSolved",
-            "Amount": "1"
+            "Amount": "1",
+            "HashOfTransaction": "0"
         }
     ]
 }
