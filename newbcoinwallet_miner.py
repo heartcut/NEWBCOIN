@@ -11,12 +11,12 @@ import random
 import hashlib
 from datetime import datetime
 
-url = "http://127.0.0.1:5000/api/"
-statusurl = "http://127.0.0.1:5000/api/statuscheck/"
-balanceurl = "http://127.0.0.1:5000/api/balancecheck?pubkey="
-solveurl = "http://127.0.0.1:5000/api/solveblock?pubkey="  # also need &answer=
-lastblockurl = "http://127.0.0.1:5000/api/getlastblock/"
-transurl = "http://127.0.0.1:5000/api/dotransaction?"
+url = "http://api.newbcoin.page/api/"
+statusurl = "http://api.newbcoin.page/api/statuscheck/"
+balanceurl = "http://api.newbcoin.page/api/balancecheck?pubkey="
+solveurl = "http://api.newbcoin.page/api/solveblock?pubkey="  # also need &answer=
+lastblockurl = "http://api.newbcoin.page/api/getlastblock/"
+transurl = "http://api.newbcoin.page/api/dotransaction?"
 
 
 window = Tk()

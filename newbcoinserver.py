@@ -131,4 +131,7 @@ def add_new_block(pubkey):
     thecloudfile.seek(0)
     json.dump(theclouddata, thecloudfile, indent=4)
 
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5000)
 ##############################################
